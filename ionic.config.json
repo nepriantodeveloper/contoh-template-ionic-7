@@ -1,0 +1,7 @@
+{
+  "name": "sultan_android",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
