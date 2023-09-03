@@ -1,0 +1,27 @@
+https://swiperjs.com/element
+
+pasang di app.component.ts
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
+
+di beranda.ts tambahkan
+import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
+import { Swiper } from 'swiper';
+import { IonicSlides } from '@ionic/angular';
+
+export class BerandaPage implements OnInit {
+  
+  @ViewChild('swiper')
+  swiperRef:ElementRef | undefined;
+  swiper?: Swiper;
+  swiperModules = [IonicSlides];
+}
+
+di beranda.module.ts
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+declarations: [MenuPage],
+//tambahan swiper / slide
+schemas: [CUSTOM_ELEMENTS_SCHEMA]

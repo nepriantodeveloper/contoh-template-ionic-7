@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>profil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="keluar()">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        Logout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="gambar">
+    <!-- <img src="../../../assets/icon/favicon.png" alt=""> -->
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Nama</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>NIK</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dept</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Site</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+    </ion-item>    
+    <ion-item>
+      <ion-label>No.HP</ion-label>
+    </ion-item>
+    
+  </ion-list>
+  <div class="tombol">
+    <ion-button mode="ios" >
+      <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+      Edit Profil
+    </ion-button>
+    <ion-button mode="ios" color="warning" >
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      Keluar
+    </ion-button>
+  </div>
+</ion-content>

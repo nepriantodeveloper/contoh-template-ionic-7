@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <div class="kotak">
+    <div align="center">
+      <img src="../../assets/taxi.png" alt="" width="200">
+    </div>
+    
+    <h1 class="ion-text-center">Taxi Online</h1>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-label position="stacked">Username</ion-label>
+    <ion-input type="text" placeholder="Username" [(ngModel)]="email"></ion-input>
+    <ion-label position="stacked">Pasword</ion-label>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    <ion-button expand="block" (click)="login()">
+      Login
+    </ion-button>
+    <ion-button  expand="block" fill="clear" (click)="daftar()">
+      Daftar disini
+    </ion-button>
   </div>
 </ion-content>
